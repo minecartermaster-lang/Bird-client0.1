@@ -36,7 +36,7 @@ jobs:
 
       - name: Build Bird Client
         working-directory: extracted/bird-client
-        run: ./gradlew build --no-daemon
+        run: gradle build --no-daemon
 
       - name: Upload JAR
         uses: actions/upload-artifact@v4
